@@ -542,7 +542,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var movingPizzas1Var = document.querySelector("#movingPizzas1");
 
 // Number of pizzas greatly reduced
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 25; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
