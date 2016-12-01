@@ -447,12 +447,16 @@ var resizePizzas = function(size) {
     return dx;
   }
 
+  // Instead of calling document.querySelectorAll(".randomPizzaContainer") 4 times, we assign it to a variable and then call it.
+  var randomPizza = document.getElementsByClassName("randomPizzaContainer");
+  // We take out dx and newwidth out of the loop
+  var dx = determineDx(randomPizza[0], size);
+  var newwidth = (randomPizza[0].offsetWidth + dx) + 'px';
+
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+    for (var i = 0; i < randomPizza.length; i++) {
+      randomPizza[i].style.width = newwidth;
     }
   }
 
@@ -501,12 +505,22 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.querySelectorAll('.mover');
-  for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+  // 'document.body.scrollTop / 1250' is assigned to a variable
+  var scrollTopVar= document.body.scrollTop / 1250;
+
+  var items = document.getElementsByClassName('mover'); //replace querySelectorAll with getElementsByClassName
+
+  // repeating values of phase can be assigned in an array
+  var phaseArray =[];
+
+  for (var i = 0; i<5; i++ ){
+    phaseArray.push(Math.sin(scrollTopVar + i));
   }
 
+  for (i = 0; i < items.length; i++) {
+    var phase = phaseArray [i % 5];
+    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+  }
   // User Timing API to the rescue again. Seriously, it's worth learning.
   // Super easy to create custom metrics.
   window.performance.mark("mark_end_frame");
@@ -524,7 +538,11 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+
+  var movingPizzas1Var = document.querySelector("#movingPizzas1");
+
+// Number of pizzas greatly reduced
+  for (var i = 0; i < 20; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
@@ -532,7 +550,7 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.width = "73.333px";
     elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
-    document.querySelector("#movingPizzas1").appendChild(elem);
+    movingPizzas1Var.appendChild(elem);
   }
   updatePositions();
 });
