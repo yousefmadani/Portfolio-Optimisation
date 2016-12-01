@@ -47,7 +47,7 @@
           </li>
 
           <li>
-            <img style="width: 100px;" src="img/project-pizza">
+            <img src="img/project-pizza.jpg">
             <a href="views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
@@ -58,8 +58,7 @@
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
       </footer>
     </div>
-  </body>
-  <link async href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+      <link async href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
@@ -71,4 +70,5 @@
     <script>
       function logCRP(){var a=window.performance.timing,b=a.domContentLoadedEventStart-a.domLoading,c=a.domComplete-a.domLoading,d=document.getElementById("crp-stats");d.textContent="DCL: "+b+"ms, onload: "+c+"ms"}window.addEventListener("load",function(a){logCRP()});
     </script>
+  </body>
 </html>
