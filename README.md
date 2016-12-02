@@ -30,6 +30,7 @@ The challenge is to optimize an online portfolio for speed! In particular, optim
 - Images optimised and pizzeria.jpg resized
 - Optimisation of the ‘for’ loop in ‘changePizzaSizes’ function
 - ‘querySelectorAll’ changed to ‘getElementsByClassName’
+- Optimisation of the ‘for’ loop in the ‘updatePositions‘ function 
 - Number of moving pizza’s on (line 545) reduced to 25
 
 #### The page can be accesed here: https://yousefmadani.github.io/Portfolio-Optimisation/views/pizza.html
