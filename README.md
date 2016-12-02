@@ -1,9 +1,9 @@
 # Website Performance Optimization portfolio project
 
-The challenge is to optimize an online portfolio for speed! In particular, optimize the critical rendering path and make the page render as quickly as possible by applying the techniques picked up in the [Critical Rendering Path course]. The website was hosted on GitHub Pages.
+The challenge is to optimise an online portfolio for speed! In particular, optimise the critical rendering path and make the page render as quickly as possible by applying the techniques picked up in the [Critical Rendering Path course]. The website was hosted on GitHub Pages.
 
 
-## The project consists of manily 2 parts:
+## The project mainly consists of 2 parts:
 
 ###Part 1: Optimize PageSpeed Insights score for index.html to achieve a PageSpeed score of at least 90 for Mobile and Desktop.
 
@@ -16,9 +16,9 @@ The challenge is to optimize an online portfolio for speed! In particular, optim
 - Images were saved locally instead of requesting them 
 - Added “project-pizza.jpg” for “index.html”
 
-#### The page can be accesed here: https://yousefmadani.github.io/Portfolio-Optimisation/
+#### The page can be accessed here: https://yousefmadani.github.io/Portfolio-Optimisation/
 
-#### While the PageSpeed Insights can be accesed here: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fyousefmadani.github.io%2FPortfolio-Optimisation%2F
+#### While the PageSpeed Insights can be accessed here: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fyousefmadani.github.io%2FPortfolio-Optimisation%2F
 
 
 
