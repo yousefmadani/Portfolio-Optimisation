@@ -39,4 +39,6 @@ The challenge is to optimise an online portfolio for speed! In particular, optim
 - Udacity Website Optimization Course
 - Udacity Forums
 - ImageOptim
+- CSS minifier https://cssminifier.com/
+- JS Compress https://jscompress.com/
 - Google PageSpeed Insights 
