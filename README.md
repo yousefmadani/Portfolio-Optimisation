@@ -1,6 +1,6 @@
 # Website Performance Optimization portfolio project
 
-The challenge is to optimize an online portfolio for speed! In particular, optimize the critical rendering path and make the page render as quickly as possible by applying the techniques picked up in the [Critical Rendering Path course]
+The challenge is to optimize an online portfolio for speed! In particular, optimize the critical rendering path and make the page render as quickly as possible by applying the techniques picked up in the [Critical Rendering Path course]. The website was hosted on GitHub Pages.
 
 
 ## The project consists of manily 2 parts:
@@ -21,7 +21,8 @@ The challenge is to optimize an online portfolio for speed! In particular, optim
 #### While the PageSpeed Insights can be accesed here: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fyousefmadani.github.io%2FPortfolio-Optimisation%2F
 
 
-###Part 2: 
+
+###Part 2 consists of two objectives:
 ###A- Optimisations made to views/js/main.js make views/pizza.html render with a consistent frame-rate at 60fps when scrolling. 
 ###B- Time to resize pizzas is less than 5 ms using the pizza size slider on the views/pizza.html page. Resize time is shown in the browser developer tools.
 
@@ -33,4 +34,8 @@ The challenge is to optimize an online portfolio for speed! In particular, optim
 
 #### The page can be accesed here: https://yousefmadani.github.io/Portfolio-Optimisation/views/pizza.html
 
-### Refrences 
+### Resources:
+- Udacity Website Optimization Course
+- Udacity Forums
+- ImageOptim
+- Google PageSpeed Insights 
